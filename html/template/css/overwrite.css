@@ -1,0 +1,107 @@
+#pointerv2 {
+  width: 3px !important;
+  background: #007bff !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 0px !important;
+  height: 100% !important;
+}
+
+.chat-link-mod {
+    color: red;
+}
+.chat-link-pmod { color:yellow;}
+.chat-link-streamer {color: green;}
+.chat-link-vet {color: green;}
+.chat-link-pro {color: green;}
+.chat-link-yt {color: green;}
+.modal-backdrop{
+	display:none;
+}
+
+.detials_roulette{
+  max-width: 1050px;
+  margin:20px auto;
+  margin-bottom:5px;
+  display: block;
+  clear: both;
+}
+
+#past{
+	margin:0;
+  float: right;
+}
+
+#banner{
+  color:#fff;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.ball {
+    border-radius: 0;
+    color: white;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.list-group-item {
+  font-size:10px;
+}
+
+
+.greenbtn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #4cae4c;
+    color: #4cae4c;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+
+.greenbtn:hover {
+  background: #4cae4c none repeat scroll 0 0;
+  color: #1b2431;
+}
+.btnredeem {
+    background: #4cae4c;
+    border: 1px solid #4cae4c;
+    color: #4cae4c;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+	margin-left: 25px;
+}
+
+.btnredeem:hover {
+  background: #4cae4c none repeat scroll 0 0;
+  color: #1b2431;
+}
+
+#promocode{
+    background-color: #273142;
+    border: 1px solid #659db8;
+    border-radius: 0;
+    color: #fff;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.affiliateSidebar {
+  padding:10px;
+}
+.affiliateSidebar .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+  border: 0;
+}

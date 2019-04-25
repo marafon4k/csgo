@@ -1,0 +1,389 @@
+
+.support {
+
+	
+	overflow: hidden;
+	}
+	
+a,a:link {
+    text-decoration: none;
+}
+a:active {
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+      color: #ffffff;
+}
+
+.newticket {
+    background: #cd4949;
+    color: white;
+    padding: 50px;
+    width: 400px;
+    float: left;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.listticket {
+    background: #cd4949;
+    color: white;
+    padding: 50px;
+    width: 400px;
+    float: right;
+	cursor: pointer;
+	 border-radius: 10px;
+}
+.support .table {
+margin-top: 10px;
+position: relative;
+float: left;
+}
+.support .table .list:nth-of-type(1) {
+
+  border: 0 none;
+  line-height: 45px; 
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background: #1b2529;color: #000!important;
+  }
+
+.support .table .list {
+white-space: nowrap;	
+margin-bottom: 5px;  
+ border: 0 none;
+ line-height: 45px;
+ text-align: center; 
+ overflow: hidden; 
+ position: relative;
+ background: #1b2529;
+ color: #c14d4d!important;
+  border-radius: 10px;
+  color: rgba(29,33,35,0.1);
+ }
+.support .table .list .tb0 {
+	width: 5%;
+	text-align: center;
+  float: left;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tb1 {
+	width: 10%;
+	text-align: center;
+  float: left;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tbId {
+	width: 15%;
+	text-align: center;
+  float: left;
+	display:inline-block;
+	color: #cd4949;
+	
+	}
+.support .table .list .tb2 {
+	width: 25%;
+  float: center;
+	text-align: center;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tb10 {
+	width: 25%;
+  float: center;
+	text-align: center;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tb8 {
+	width: 34%;
+  float: center;
+	text-align: center;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tb9 {
+	width: 34%;
+	text-align: center;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tb3 {
+	width: 22%;
+	text-align: center;
+	display:inline-block;
+	  color: white;
+	
+	}
+	
+
+.support .table .list .tb4 {
+	width: 22%;
+    float: right;
+	text-align: center;
+    margin-right: 10px;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tbStatus {
+	width: 19%;
+	text-align: center;
+    margin-right: 10px;
+	display:inline-block;
+	color: white;
+	
+	}
+.support .table .list .tbStatusZokrit {
+	color: red;
+	
+	}
+.support .table .list .tb5 {
+	width: 15%;
+	}
+.support .table .list .tb6 {
+	width: 15%;
+	}
+span.ntitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+span.nabout {
+    text-align: center;
+    display: block;
+}
+.nticket {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+.nticket input[type="text"] {
+    width: 100%;
+    border: 1px white solid;
+    height: 34px;
+    padding: 0 12px;
+    font: 13px 'Open Sans';
+    color: #fff;
+	background-color: #1b2529;
+    margin-bottom: 5px;
+}
+.nticket textarea{
+    width: 100%;
+    border: 1px white solid;
+    height: 120px;
+    padding: 5px 12px 74px 12px;
+    font: 13px 'Open Sans';
+    color: #fff;
+	background-color: #1b2529;
+    margin-bottom: 5px;
+}
+.fticket {
+    display: block;
+    float: left;
+    background: #7b2f2f;
+    color: white;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+	border-radius: 5px;
+}
+.fticket2 {
+    display: block;
+    background: #5cb85c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+	border-radius: 5px;
+}
+.oticket {
+    display: block;
+    float: left;
+    background: #5cb85c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+	border-radius: 5px;
+}
+.sticket .avatar {
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.sticket {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+	width: 100%;
+}
+
+.sticket .avatar img {
+    border-radius: 50%;
+    width: 60px;
+}
+.sticket .tfe {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 500px;
+	
+	
+}
+.sticket .title {
+    color: #fff;
+
+  
+}
+
+.sticket .title_admin {
+    color: #5ccd49;
+
+  
+}
+.sticket .msg {
+	color: #fff;
+    width: 700px;
+	margin-top: 5px;
+    display: block;
+    float: left;
+    position: relative;
+    word-break: break-word;
+}
+
+
+.newtif input[type="text"] {
+    border: 2px #c14d4d solid;
+    width: 740px;
+    height: 34px;
+    padding: 0 12px;
+    font: 13px 'Open Sans';
+    color: #fff;
+    float: left;
+	    margin-bottom: 5px;
+}
+.newtif textarea{
+	border: 1px white solid;
+    width: 100%;
+    height: 110px;
+    background: #1b2529;
+    padding: 5px 12px 54px 12px;
+    border: 0;
+    margin: 15px 0 0 0;
+    font: 13px 'Open Sans';
+    color: #fff;
+    float: left;
+    margin-bottom: 5px;
+}
+.newtif input[type="submit"] {
+    border: 0 none;
+    width: 141px;
+    height: 34px;
+    float: left;
+    cursor: pointer;
+    margin-left: 100px;
+	margin-top: 20px;
+    
+}.newtif {
+    width:100%;
+    float: left;
+}
+span.infsff {
+    display: block;
+    margin-top: 30px;
+    color: #fff;
+}span.thanks {
+    display: block;
+    margin-top: 30px;
+    color: #5cb85c;
+}
+.sticket .tfe .time {
+ float: right;
+    right: 5px;
+    position: absolute;
+    color: #5CB85C;
+    top: 10px;
+}
+.sticket .tfe .time_user {
+    float: right;
+    right: 5px;
+    position: absolute;
+    color: #D92B4C;
+    top: 10px;
+}
+.suticket {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    width: 100%;
+
+}
+.suticket_admin {
+    float: left;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.title-block {
+	margin-bottom: 20px;
+}
+.title-block .icon-support {
+	display: inline-block;
+	height: 83px;
+	position: relative;
+	top: -20px;
+}
+
+.other-title {
+	 font-size: 16px;
+	 font-weight: 300;
+	 text-align: center;
+	 display:inline-block;
+	 margin-top: 20px;
+}
+
+/* ======= */
+
+section#support-page {
+    background-color: #1A2327;
+    display: flex;
+    align-content: center;
+    padding: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #4F5E64;
+    font-weight: 600;
+    flex-direction: column;
+}
+section#support-page span.box-title {
+    color: white;
+    font-size: 20px;
+    padding-bottom: .5em;
+    border-bottom: 3px solid #4BEA76
+}
+
+.support .buttons-block {
+    margin-top: 30px;
+}

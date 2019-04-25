@@ -1,0 +1,926 @@
+
+
+@import url("reset.css");
+/*@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700,300);*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #293036;
+    color: #52575b;
+    font-size: 13px;
+    /*font-family: 'Quicksand', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+    /*letter-spacing: -0.050em;*/
+    font-weight: 400;
+	overflow:hidden;
+}
+b, strong {
+    font-weight: 700;
+}
+a {color:#c1c1c1; text-decoration:none;}
+.title {
+	font-size:22px;
+	color:#EE001F;
+	font-weight:700;
+	border-bottom:1px solid #293036;
+	text-transform:uppercase;
+	padding-bottom:10px;
+	margin-bottom:20px;
+}
+p {line-height:22px;}
+h1,h2,h3,h4,h5 {
+	color:#FFF;
+	font-weight:700;
+	margin-bottom:5px;
+	text-transform:uppercase;
+}
+h1 {font-size:18px;}
+p {
+	margin-bottom:15px;
+}
+#header {
+    background: rgb(29, 34, 38)
+    width: 100%;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+	position:relative    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgb(29, 34, 38);
+    border-bottom: 2px solid #EE001F;
+    padding: 0px 0px 0px 30px;
+}
+    #mainHeader {
+        width: calc(100% - 300px);
+        float: left;
+    }
+        #logo {
+            display: block;
+            float: left;
+            height: 90px;
+            margin-right: 50px;
+        }
+            #logo img {
+                display: block;
+                margin-top: 22px;
+            }
+        #nav {
+            float: left;
+            height: 90px;
+            line-height: 90px;
+        }
+            #nav a {
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+                color: #c1c1c1;
+                margin: 0 10px;
+            }
+                #nav a.active, #nav a:hover {
+                    color: #293036;
+                }
+				
+		#mobNavToggle {
+			position:absolute;
+			top:20px;
+			right:30px;
+			width:50px;
+			height:50px;
+			background:url("../images/navIcon.png") no-repeat center right;
+			display:none;
+		}
+    #userPanel {
+        width: 300px;
+        height: 90px;
+        float: right;
+        -webkit-box-shadow: -4px 0px 20px -14px rgba(0,0,0,0.7);
+        -moz-box-shadow: -4px 0px 20px -14px rgba(0,0,0,0.7);
+        box-shadow: -4px 0px 20px -14px rgba(0,0,0,0.7);
+    }
+		#steamLogIn {
+			float:right;
+			margin:23px 30px 0 0;
+		}
+        #userPanel img {
+            width: 50px;
+            float: left;
+            margin: 20px 10px 0 20px;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+        }
+        #userPanel .username {
+            font-weight: bold;
+            font-size: 14px;
+            color: #293036;
+            text-decoration: none;
+            display: inline-block;
+            float: left;
+            width: calc(100% - 90px);
+            margin-top: 30px;
+        }
+        #userPanel .logout {
+            color: #c1c1c1;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 700;
+        }
+		#sidr-id-userPanel {
+			width:100%;
+		}
+			#sidr-right {
+				background: #000;
+			}
+			#sidr-id-userPanel img {
+				width:50px;
+				float:left;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				margin:10px 0 0 15px;
+			}
+			#sidr-id-userPanel a {
+				padding:0;
+				margin:0;
+				float:none;
+			}
+			.sidr-class-username {
+				font-weight:700;
+			}
+			.sidr-class-UserPanelInfo {
+				float:right;
+				width:calc(100% - 80px);
+				margin:0;
+				margin-top:15px;
+			}
+			.sidr-inner a {
+				display:block;
+				width:100%;
+				float:left;
+				margin-top:20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding-left:20px;
+	text-transform:uppercase;
+			}
+
+#content {
+    float: left;
+    width: 80%;
+    width: calc(100% - 300px);
+	height:calc(100% - 90px);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+	overflow:auto;
+}
+	.fullWitchContent {
+		margin:0 auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+		background: #171c20;
+		padding:30px;
+		margin-top:30px;
+		max-width:1200px;
+		width:calc(100% - 60px);
+	}
+	.bigBTN {
+		width: 100%;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 20px;
+	    font-size: 18px;
+	    font-weight: 700;
+	    text-align: center;
+	    overflow: auto;
+	    float: left;
+	    background: rgb(29, 34, 38);
+	    text-decoration: none;
+	    color: #293036;
+	}
+		.bigBTN span {
+			font-weight: 400 !important;
+			display: inline-block;
+			width: 100%;
+			margin-top: 5px;
+			font-size: 12px;
+			color: #c1c1c1 !important;
+		}
+    #leftContent {
+        width: 35%;
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-right: 30px;
+        overflow: auto;
+    }
+        #theTimer {
+            width: 100%;
+            background: #171c20;
+            float: left;
+			height:280px;
+			padding:10px 0;
+        }
+			.itemsinpot  {
+				position:absolute;
+				text-align:center;
+				font-size:28px;
+				font-weight:700;
+				top:125px;
+				width:280px !important;
+				left:0;
+				z-index:11;
+			}
+			.timeleft {
+				position:absolute;
+				text-align:center;
+				font-size:18px;
+				font-weight:700;
+				top:195px;
+				width:280px !important;
+				left:0;
+				z-index:11;
+			}
+			.roulette-inner img {
+				width:100%;
+				/*
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				*/
+			}
+
+
+			#roulette {
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				top:30px;
+				left:30px;
+				width:220px;
+				height:220px;
+				position: absolute;
+				overflow:hidden;
+				z-index:11;
+				background: rgb(29, 34, 38)
+				border:2px solid rgb(29, 34, 38)
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+				#winnername {
+					position:absolute;
+					width:100%;
+					height:100%;
+					background:rgba(241, 196, 15,0.95);
+					z-index:25;
+					top:0;
+					left:0;
+					text-align:center;
+				  -webkit-transform-style: preserve-3d;
+				  -moz-transform-style: preserve-3d;
+				  transform-style: preserve-3d;
+				}
+				.centerInfo {
+					  position: relative;
+					  top: 50%;
+					  transform: translateY(-51%);
+					  -moz-transform: translateY(-51%);
+					  -webkit-transform: translateY(-51%);
+				}
+				#realWinnerName {
+					font-weight:700;
+					font-size:16px;
+					color:#000;
+					margin-bottom:5px;
+					display:inline-block;
+					width:100%;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					padding:0 15%;
+				}
+        #jackpotInfo {
+            width: 100%;
+            float: left;
+            margin-top: 15px;
+        }
+            .infoWindow {
+                width: 50%;
+                width: calc((100% - 15px) / 2);
+                float: left;
+                background: #171c20;
+                margin-bottom: 15px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+                .infoWindow:nth-child(even) {
+                    float: right;
+                }
+            .infoWindow div {
+                display: inline-block;
+                width: 100%;
+                font-size: 22px;
+                color: rgb(29, 34, 38)
+                margin-bottom: 5px;
+            }
+            .infoWindow:first-child div {
+                font-weight: 700;
+            }
+			.userItemInPotInfo {
+				font-size:14px;
+				color: #52575b;
+			}
+		#userPartnerInfo {
+          width: 100%;
+            background: #1D2226;
+            float: left;
+			padding:20px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+        #rightContent {
+            width: 65%;
+            float: right;
+        }
+            #jackpotItems {
+                width: 100%;
+				height:190px;
+				position:relative;
+				/*
+                background: #171c20;
+				*/
+				border:3px solid #171c20;
+				background: #1D2226;
+                margin-bottom: 15px;
+                float: left;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding:0 2px;
+				padding-bottom:2px;
+            }
+				#noItems {
+					width:100%;
+					text-align:center;
+					float:left;
+					margin-top:85px;
+				}
+				.grid {
+				   width: auto;
+				   white-space:nowrap; 
+				}
+				
+                .item {
+					display: inline-block;
+					height:170px;
+                    width: 160px;
+					margin:0 5px;
+					margin-top:7px;
+                    text-align: center;
+                    padding: 10px;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+					float:left;
+					background:#171C20;
+                }
+					.item :first-child{
+						
+					}
+                    .iteminfo {
+                        display: block;
+						width:100%;
+                        font-size: 12px;
+                        margin-bottom: 5px;
+						white-space:normal !important; 
+                    }
+                    .itemprice {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #959595;
+                    }
+                    .item img {
+                        display: block;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+           
+            #jackpotPlayers {
+                width: 100%;
+                background: #171c20;
+                margin-bottom: 15px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 20px;
+                overflow: auto;
+                float: left;
+            }
+				#playerlist {
+					min-height:200px;
+				}
+                .playersTitle {
+                    width: 100%;
+                    border-bottom: 1px solid #293036;
+                    padding-bottom: 10px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    overflow: auto;
+                    margin-bottom: 10px;
+                    color: #959595;
+                }
+                    .playerName {
+                        display: inline-block;
+                        width: 70%;
+                        float: left;
+                    }
+                        .playerName img {
+                            width: 50px;
+                            float: left;
+                            margin-right: 10px;
+							-webkit-border-radius: 50%;
+							-moz-border-radius: 50%;
+							border-radius: 50%;
+                        }
+                        .playerName a {
+                            text-decoration: none;
+                            color: #959595;
+                        }
+                    .playerItems, .playerTotal, .playerOdds {
+                        display: inline-block;
+                        width: 15%;
+                        float: left;
+                        text-align: right;
+                    }
+					
+                .playerBox {
+                    width: 100%;
+                    float: left;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    /*border-bottom: 1px solid #1d2328;*/
+                }
+                    .playerBox:last-child{
+                        border: none;
+                    }
+                #gameInfo {
+                    font-size: 12px;
+                    padding-top: 20px;
+                    width: 100%;
+                    float: left;
+                }
+                    #roundhash {
+	                    float: right;
+                    }
+                    #gameInfo  a{
+                        color: #959595;
+                        text-decoration: none;
+                    }
+            #lastWinner {
+                width: 100%;
+                background: #1D2226;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 20px;
+                overflow: auto;
+                float: left;
+            }
+            #lastWinner img {
+                float: left;
+                width: 90px;
+                margin-right: 15px;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+            }
+                #lastWinner .userLink {
+                    display: inline-block;
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: rgb(29, 34, 38)
+                    margin-bottom: 5px;
+					margin-top:10px;
+                }
+                #lastWinner p {
+                    font-size: 12px;
+                }
+                .userWon {
+                    color: #959595;
+                    margin-bottom: 10px;
+                    font-size: 14px !important;
+					
+                }
+				#lastWinner span {
+					display:inline-block;
+					padding:5px 10px;
+					background:#293036;
+					margin-bottom:5px;
+					margin-right:5px;
+					font-size:10px;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+					color: #959595;
+				}
+                #lastWinner p a {
+                    color: #959595;
+                    text-decoration: none;
+                    margin-top: 5px;
+                    display: inline-block;
+                }
+				.vertifyBTN {
+					font-size:12px;
+					color: #959595;
+					text-decoration:none;
+				}
+			#footer {
+				float:left;
+				width:100%;
+				text-align:right;
+				margin-top:15px;
+			}
+				#footer a {
+					color:#959595;
+					text-decoration:none;
+					margin-left:10px;
+				}
+#chat {
+    width: 300px;
+    height: 100%;
+    height: calc(100% - 90px);
+    float: right;
+    /*background: #171c20;*/
+	 background: #1D2226;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+	color: #959595;
+}
+	.chatOnline {
+		display:inline-block;
+		padding:10px 0;
+		width:100%;
+		text-align:center;
+					background:#293036;
+					font-size:10px;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+					color: #959595;
+	}
+	.messages {
+		    padding:15px 15px 0px 15px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		width:100%;
+		overflow:auto;
+		height:100%;
+		height:calc(100% - 80px);
+		overflow:hidden;
+	}
+#text-massage {
+	width:calc(100% - 60px);
+	float:left;
+	height:30px;
+	background:none;
+	border:none;
+	background: #293036;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding-left:10px;
+			color: #959595;
+			font-size:10px;
+}
+.chat-buttons {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:20px 15px;
+
+}
+#send_massage {
+	width:60px;
+	float:left;
+	height:30px;
+	background:none;
+	border:none;
+	background: rgb(29, 34, 38)
+	text-transform:uppercase;
+	font-size:10px;
+}
+
+	
+	
+	
+	.chat-buttons {
+		width:100%;
+		float:left;
+	}
+.caht-name a {
+	color: rgb(29, 34, 38)
+	text-decoration:none;
+	display:inline-block;
+	margin-bottom:5px;
+	white-space:normal;
+	width:calc(100% - 40px);
+}
+.chat-msg {
+	width:100%;
+	float:left;
+	margin-bottom:15px;
+}
+.caht-avat {
+/* Rounded avatars */
+    float: left;
+    position: relative;
+}
+.caht-ava {
+	width: 30px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.caht-name {
+font-size: 13px;
+font-weight: 700;
+margin: 0 !important;
+}
+.caht-dateid {
+  color: #6C9FCE;
+  float: left;
+  font-size: 10px;
+  height: 15px;
+  margin-top: 3px;
+  width: 140px;
+}
+.msg-text {
+  font-size: 13px !important; 
+}
+.chat-mess {
+	width: calc(100% - 40px);
+	float: right;
+}
+	.chat-msg:hover .adminTools {
+		opacity: 1;
+	}
+	.adminTools {
+		display:none;
+	width: calc(100% - 40px);
+	float: right;
+	font-size:10px;
+	text-align:right;
+	margin-top:3px;
+	
+	opacity: 0.2;
+	}
+	.adminTools a {
+		color:#FFF;
+	}
+	.adminTools span {
+		margin:0 5px;
+	}
+#historyTable {
+	overflow:auto;
+}
+.historyPic {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	float:left;
+	margin-right:30px;
+	width:120px;
+}
+.historyItem {
+	width:100%;
+	overflow:auto;
+	margin:30px 0;
+}
+	.historyID {
+		display:inline-block;
+		margin-bottom:5px;
+	}
+	.HistoryUserLink {
+		font-size:18px;
+		margin-bottom:5px;
+		display:inline-block;
+	}
+	.HistoryDepositedText{
+		display:inline-block;
+		margin-top:10px;
+		color:#959595;
+	}
+	.HistoryWon {
+		color:#959595;
+		margin-bottom:15px;
+		display:inline-block;
+	}
+	.historyDeposit {
+		width:100%;
+		width:calc(100% - 150px);
+		float:right;
+	}
+	.historyDeposit  img{
+		width:50;
+		margin-right:5px;
+		margin-bottom:5px;
+	}
+	.historyInfo {
+		float:left;
+		width:calc(100% - 150px);
+	}
+	
+div.pagination a {
+	margin: 2px;
+	padding: 0.5em 0.64em 0.43em 0.64em;
+	display:inline-block;
+	text-decoration: none; /* no underline */
+	color: #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+div.pagination a:hover, div.pagination a:active {
+	padding: 0.5em 0.64em 0.43em 0.64em;
+	margin: 2px;
+    background: #293036;
+    color: #FFF;
+}
+div.pagination span.current {
+		display:inline-block;
+		padding: 0.5em 0.64em 0.43em 0.64em;
+		margin: 2px;
+		background-color:  rgb(29, 34, 38)
+		color: #000;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+	}
+div.pagination span.disabled {
+		display:none;
+	}
+	
+	
+	.rankingAvatar {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-right:20px;
+	padding:5px 0;
+	}
+	.rankingTable td {
+		vertical-align: middle;
+	}
+	.rankingTable tr {
+		
+		
+	}
+	.myRanking {
+
+	}
+	
+	
+	
+.i1consumer, .i1base { /* done */
+    /*border:1px solid #D2D2D2;*/
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2d2d2+0,000000+100&amp;0.10+1,0.10+1,0+100 */
+background: rgba(210,210,210,0.05);
+}
+
+.i2industrial { /* done */
+     /*border:1px solid #6496e1; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6496e1+0,000000+100&0.10+0,0+100 */
+background: rgba(100,150,225,0.05);
+}
+
+.i3mil-spec { /* done */
+    /* border:1px solid #4b69cd; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b69cd+0,000000+100&0.10+0,0+100 */
+background: rgba(75,105,205,0.05);
+}
+
+.i4restricted { /* done */
+    /* border:1px solid #8847ff; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8847ff+0,000000+100&0.10+0,0+100 */
+background: rgba(136,71,255,0.05);
+}
+
+.i5classified { /* done */
+     /*border:1px solid #d32ce6; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d32ce6+0,000000+100&0.10+0,0+100 */
+background: rgba(211,44,230,0.05);
+}
+
+.i6covert { /* done */
+    /* border:1px solid #eb4b4b; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eb4b4b+0,000000+100&0.10+0,0+100 */
+background: rgba(235,75,75,0.05);
+}
+
+.i7knife,.i9contraband { /* done */
+     /*border:1px solid #eb4b4b; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c91e21+0,e8d20d+99&0.10+0,0.10+100 */
+background: rgba(201,30,33,0.05);
+}
+
+.knifenew { /* done */
+     /*border:1px solid #C9B30C; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,e8d20d+99&0+0,0.10+97 */
+background:  rgba(0,0,0,0);
+}
+
+.knifeold { /* done */
+     /*border:1px solid #caab05; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#caab05+0,000000+100&0.10+0,0+100 */
+background: rgba(202,171,5,0.05);
+}
+
+.i9contrabandold { /* done */
+    /* border:1px solid #caab05; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#886a08+0,000000+100&0.10+0,0+100 */
+background: rgba(136,106,8,0.05);
+}
+
+.form input[type="text"] {
+	width:100%;
+	background:none;
+	border:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:15px;
+	margin-top:20px;
+	background:#293036;
+	color:rgb(29, 34, 38) !important;
+	text-align:center;
+}
+	.form input[type="submit"] {
+	width:100%;
+	border:none;
+	background:rgb(29, 34, 38) !important;
+	padding:15px 0;
+	text-transform:uppercase;
+	font-weight:700;
+	margin-bottom:10px;
+	
+}
+	
+@media all and (max-width: 1100px) {
+	#mobNavToggle {
+		display:block;
+	}
+	#nav, .headerRightSide {
+		display:none;
+	}
+}
+@media all and (max-width: 1300px) {
+    #leftContent {
+        width: 100%;
+        padding: 0;
+    }
+    #rightContent {
+        width: 100%;
+    }
+}
+@media all and (max-width: 800px) {
+	html, body {
+		overflow:auto;
+		height: inherit;
+	}
+    #content {
+        width: 100%;
+		height: inherit !important;
+    }
+    #chat {
+        width: 100%;
+        height: inherit !import;
+		max-height:300px;
+    }
+}
+
+/* Copyright (c) 2016 CSGOLegal.com */

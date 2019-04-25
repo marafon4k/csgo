@@ -1,0 +1,1 @@
+<div class="alert alert-success text-center" style="margin-bottom:5px;margin-top:25px"><button type="button" class="close" data-dismiss="alert"></button><b><i class="fa fa-exclamation-circle"></i> *ALPHA* Use the "FREE" code to get 500 coins and start playing!</b></div>

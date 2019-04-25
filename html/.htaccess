@@ -1,0 +1,27 @@
+RewriteEngine on
+RewriteRule ^(\w+)$ index.php?page=$1 [L,NC,QSA]
+RewriteRule ^(\w+)+\/$ index.php?page=$1 [L,NC,QSA]
+#RewriteCond %{HTTP_HOST} !^$
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteCond %{HTTPS}s ^on(s)|
+#RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} ^w3af.sourceforge.net [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} dirbuster [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} nikto [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} SF [OR]
+    RewriteCond %{HTTP_USER_AGENT} sqlmap [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} fimap [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} nessus [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} whatweb [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} Openvas [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} jbrofuzz [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} libwhisker [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} webshag [NC,OR]
+    RewriteCond %{HTTP:Acunetix-Product} ^WVS
+    RewriteRule ^.* http://127.0.0.1/ [R=301,L]
+    </IfModule>
+	ErrorDocument 404 /404.html
+
+	
